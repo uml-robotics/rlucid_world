@@ -1,18 +1,8 @@
-# Desc: Olsen 4th floor stage simulation config
+# Desc:  Nerve
 
-# defines robots
-include "jr.inc"
-
-# defines 'map' object used for floorplans
+include "pioneer.inc"
 include "map.inc"
-
-# defines sick laser scanner
-include "sick.inc"
-
-# defines urg laser scanner
-include "urg.inc"
-
-#include "ptz.inc"
+include "hokuyo.inc"
 
 # size of the world in meters
 #size [37.18 37.18]
@@ -27,8 +17,8 @@ threads 2
 # configure the GUI window
 window( 
   size [ 969 362 ] 
-  center [0.704 -0.252]
-  scale 17.385 
+  center [-4.053 -0.480]
+  scale 15.805 
 )
 
 # load an environment bitmap
@@ -41,13 +31,12 @@ map(
 
 # create a robot
 # This is a atrv with a Sick ranger that supports fiducial recognition
-atrvjr(
+pioneer2dx_base_no_sonar
+(
   name "robot1"
   color "red"
   pose [-3.500 -4.500 0.000 90.000]
-  sick_laser( )
-  urg_laser( )
-  #atrv_ptz ()
+  hokuyolaser( pose [ 0.150  0.000 0.200 0.000])
   watchdog_timeout -1.0
 )
 
