@@ -1,0 +1,15 @@
+<package>
+  <description brief="rlucid_world">
+
+    Contains maps for amcl, worlds for stage simulation and
+    related topography maps used for the R-LUCID project.
+
+  </description>
+  <author>Mikhail Medvedev</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rlucid_world</url>
+
+</package>
+
+
