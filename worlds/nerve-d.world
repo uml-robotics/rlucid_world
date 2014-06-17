@@ -23,8 +23,8 @@ window(
 
 # load an environment bitmap
 map(
-  bitmap "../maps/NERVE_R-LUCID_Map_D.png"
-  size [9.967 15.453 1.500]
+  bitmap "../maps/R-LUCID_map_D.png"
+  size [9.3472 14.8336 1.500]
   name "nerve"
 )
 
@@ -35,72 +35,7 @@ pioneer2dx_base_no_sonar
 (
   name "robot1"
   color "red"
-  pose [0.0 0.0 0.000 0.0]
+  pose [9.18 5.7 0.0 3.14]
   hokuyolaser( pose [ 0.150  0.000 0.200 0.000])
   watchdog_timeout -1.0
 )
-
-# the model of a generic thing in the robot's universe
-# if you don't have gui_movemask, you can't use the mouse to move the object
-define puck model(
-  size [ 0.500 0.300 1.500]
-  gui_movemask 3
-  gui_nose 0
-)
-
-define puck1 model(
-  size [ 1.000 0.200 2.000]
-  gui_movemask 3
-  gui_nose 0
-)
-
-define puck2 model(
-  size [ 1.500 0.500 2.000]
-  gui_movemask 3
-  gui_nose 0
-)
-
-# instances of things
-# fiducial_return is the identity returned by a fiducial detector that sees the object
-# The software will have to map that to guns, people, hazmat, etc.
-
-puck(
-    name "operator_169"
-    pose [0.0 4.0 0.000 0.0]
-    color "red"
-    fiducial_return 169
-)
-
-puck(
-    name "bomb_195"
-    pose [-2.8 -5.5 0.000 3.027]
-    color "purple"
-    fiducial_return 195
-)
-
-
-puck(
-    name "badguy_139"
-    pose [3.0 0.0 0.000 0.000]
-    color "orange"
-    fiducial_return 139
-)
-
-puck(
-    name "hostage_225"
-    pose [-1.0 -1.9 0.000 -105.501]
-    color "red"
-    fiducial_return 225
-)
-
-#puck1(
-#    name "door1"
-#    pose [0.0 1.0 0.000 -179.986]
-#    color "grey"
-#)
-
-#puck2(
-#    name "furniture1"
-#    pose [0.0 1.1 0.000 -134.149]
-#    color "grey"
-#)
