@@ -1,5 +1,5 @@
 image: R-LUCID_map_training.png
-resolution: 0.01377627
+resolution: 0.016933333
 origin: [0.0, 0.0, 0.000000]
 negate: 0
 occupied_thresh: 0.65
