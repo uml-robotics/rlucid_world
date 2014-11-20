@@ -5,7 +5,6 @@ include "map.inc"
 include "hokuyo.inc"
 
 # size of the world in meters
-#size [37.18 37.18]
 
 # set the resolution of the underlying raytrace model in meters
 name "nerve"
