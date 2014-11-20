@@ -9,7 +9,8 @@ include "hokuyo.inc"
 
 # set the resolution of the underlying raytrace model in meters
 name "nerve"
-resolution 0.01
+resolution 0.01504937 #w-based
+         # 0.01534743 #h-based
 
 interval_sim 50
 interval_real 50
@@ -23,8 +24,8 @@ window(
 
 # load an environment bitmap
 map(
-  bitmap "../maps/R-LUCID_map_C.jpg"
-  size [9.34 13.77 1.500]
+  bitmap "../maps/R-LUCID_Adaptive_Map_C.jpg"
+  size [10.67 15.24 1.500]
   name "nerve"
 )
 

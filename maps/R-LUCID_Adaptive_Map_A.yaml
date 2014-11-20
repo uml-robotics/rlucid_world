@@ -1,5 +1,5 @@
-image: test_with_obstacles_5cm.png
-resolution: 0.05
+image: R-LUCID_Adaptive_Map_A.jpg
+resolution: 0.01504937
 origin: [0.0, 0.0, 0.000000]
 negate: 0
 occupied_thresh: 0.65
