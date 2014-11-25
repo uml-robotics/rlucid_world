@@ -9,7 +9,7 @@ include "hokuyo.inc"
 
 # set the resolution of the underlying raytrace model in meters
 name "nerve"
-resolution 0.017899329
+resolution 0.01
 
 interval_sim 50
 interval_real 50
@@ -17,14 +17,14 @@ threads 2
 # configure the GUI window
 window(
   size [ 612 345 ]
-  center [0.398 -0.744]
-  scale 19.124
+  center [-2.055 -2.188]
+  scale 54.562
 )
 
 # load an environment bitmap
 map(
-  bitmap "../maps/R-LUCID_Adaptive_Map_C.jpg"
-  size [10.67 15.24 1.500]
+  bitmap "../maps/R-LUCID_map_training.png"
+  size [5.131 7.620 1.500]
   name "nerve"
 )
 
@@ -35,7 +35,7 @@ pioneer2dx_base_no_sonar
 (
   name "robot1"
   color "red"
-  pose [-4.614 -3.716 0.000 -0.000]
+  pose [-1.837 -2.817 0.000 1.239]
   hokuyolaser( pose [ 0.150  0.000 0.200 0.000])
   watchdog_timeout -1.0
 )
