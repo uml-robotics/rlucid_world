@@ -1,5 +1,5 @@
-image: R-LUCID_Adaptive_Map_training.png
-resolution: 0.008291621
+image: R-LUCID_Adaptive_Map_training.jpg
+resolution: 0.01777209
 origin: [0.0, 0.0, 0.000000]
 negate: 0
 occupied_thresh: 0.65
