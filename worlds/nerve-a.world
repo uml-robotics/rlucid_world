@@ -23,7 +23,7 @@ window(
 
 # load an environment bitmap
 map(
-  bitmap "../maps/R-LUCID_Adaptive_Map_A.jpg"
+  bitmap "../maps/R-LUCID_Adaptive_Map_A.png"
   size [10.67 15.24 1.500]
   name "nerve"
 )
