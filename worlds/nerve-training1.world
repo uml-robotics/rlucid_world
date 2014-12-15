@@ -9,7 +9,7 @@ include "hokuyo.inc"
 
 # set the resolution of the underlying raytrace model in meters
 name "nerve"
-resolution 0.01777209
+resolution 0.018827586
 
 interval_sim 50
 interval_real 50
