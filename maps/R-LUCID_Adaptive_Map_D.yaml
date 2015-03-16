@@ -1,5 +1,5 @@
-image: R-LUCID_Adaptive_Map_D.jpg
-resolution: 0.01991828
+image: R-LUCID_Autonomy_Map_for_Pioneer.jpg
+resolution: 0.01875
 origin: [0.0, 0.0, 0.000000]
 negate: 0
 occupied_thresh: 0.9
