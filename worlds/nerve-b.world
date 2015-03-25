@@ -23,7 +23,7 @@ window(
 # load an environment bitmap
 map(
   bitmap "../maps/R-LUCID_Autonomy_Map.jpg"
-  size [10.6934 9.2456 1.500]
+  size [10.693 9.246 1.500]
   name "nerve"
 )
 
@@ -34,7 +34,7 @@ pioneer2dx_base_no_sonar
 (
   name "robot1"
   color "red"
-  pose [1.381 -3.900 0.000 -179.243]
+  pose [0.074 1.224 0.000 0.275]
   hokuyolaser( pose [ 0.150  0.000 0.200 0.000])
   watchdog_timeout -1.0
 )
