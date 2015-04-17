@@ -17,14 +17,14 @@ threads 2
 # configure the GUI window
 window(
   size [ 612 345 ]
-  center [-2.055 -2.188]
-  scale 54.562
+  center [-1.080 -0.777]
+  scale 45.093
 )
 
 # load an environment bitmap
 map(
-  bitmap "../maps/R-LUCID_Autonomy_Map_Training.jpg"
-  size [3.048 7.9248 1.500]
+  bitmap "../maps/R-LUCID_Autonomy_Training_Map.jpg"
+  size [3.048 7.925 1.500]
   name "nerve"
 )
 
@@ -35,7 +35,7 @@ pioneer2dx_base_no_sonar
 (
   name "robot1"
   color "red"
-  pose [-1.837 -2.817 0.000 90.000]
+  pose [-1.051 -0.067 0.000 90.000]
   hokuyolaser( pose [ 0.150  0.000 0.200 0.000])
   watchdog_timeout -1.0
 )

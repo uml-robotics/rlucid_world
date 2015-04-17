@@ -1,1 +1,41 @@
-nerve-training1.world
+# Desc:  Nerve
+
+include "pioneer.inc"
+include "map.inc"
+include "hokuyo.inc"
+
+# size of the world in meters
+#size [37.18 37.18]
+
+# set the resolution of the underlying raytrace model in meters
+name "nerve"
+resolution 0.0127
+
+interval_sim 50
+interval_real 50
+threads 2
+# configure the GUI window
+window(
+  size [ 612 345 ]
+  center [1.366 -1.030]
+  scale 66.021
+)
+
+# load an environment bitmap
+map(
+  bitmap "../maps/R-LUCID_Autonomy_Training_Map.jpg"
+  size [3.048 7.925 1.500]
+  name "nerve"
+)
+
+
+# create a robot
+# This is a atrv with a Sick ranger that supports fiducial recognition
+pioneer2dx_base_no_sonar
+(
+  name "robot1"
+  color "red"
+  pose [1.052 -0.076 0.000 -89.518]
+  hokuyolaser( pose [ 0.150  0.000 0.200 0.000])
+  watchdog_timeout -1.0
+)
